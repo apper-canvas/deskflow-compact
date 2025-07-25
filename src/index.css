@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "react-toastify/dist/ReactToastify.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background-color: #f8fafc;
+  color: #334155;
+}
+
+/* Toast container customization */
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
+.Toastify__toast {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  border-radius: 8px;
+  min-height: 48px;
+  padding: 12px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Toastify__toast--success {
+  background: #22c55e;
+  color: white;
+}
+
+.Toastify__toast--error {
+  background: #ef4444;
+  color: white;
+}
+
+.Toastify__toast--info {
+  background: #2563eb;
+  color: white;
+}
+
+.Toastify__progress-bar {
+  height: 3px;
+}
+
+/* Custom scrollbar for task list */
+.task-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.task-list::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.task-list::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Task checkbox animation */
+.task-checkbox input:checked ~ .checkmark {
+  animation: checkmark 0.2s ease-out forwards;
+}
+
+/* Focus ring improvements */
+.focus\:ring-2:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #2563eb40;
+}
+
+/* Keyboard shortcut indicator */
+.kbd {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #64748b;
+  min-width: 20px;
+  text-align: center;
+}
