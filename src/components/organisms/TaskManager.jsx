@@ -80,7 +80,7 @@ const TaskManager = () => {
     }
   };
 
-  const handleToggleTask = async (taskId) => {
+const handleToggleTask = async (taskId) => {
     try {
       const task = tasks.find(t => t.Id === taskId);
       const updatedTask = await taskService.update(taskId, {
